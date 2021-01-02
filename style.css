@@ -1,0 +1,135 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Montserrat", sans-serif;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+h2 {
+  font-size: 3rem;
+}
+p {
+  font-size: 2rem;
+}
+h3 {
+  font-size: 2.5rem;
+}
+.header-image {
+  height: 100vh;
+  width: 100%;
+  object-fit: cover;
+  position: relative;
+  top: 0;
+  left: 0;
+  margin: 0;
+  padding: 0;
+}
+.header-text {
+  position: absolute;
+  color: #fff;
+  z-index: 5;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: auto;
+}
+.header-text h1 {
+  font-size: 3rem;
+  text-align: center;
+  letter-spacing: 4px;
+}
+.header-text h2 {
+  font-size: 2rem;
+  text-align: center;
+  margin: 4rem 0;
+  text-align: center;
+  letter-spacing: 2px;
+}
+nav {
+  width: 100%;
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 5;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.4);
+  height: 60px;
+}
+.nav-links {
+  width: 40%;
+  display: flex;
+  justify-content: space-around;
+}
+.logo {
+  color: #fff;
+  font-size: 1.5rem;
+  letter-spacing: 2px;
+}
+.nav-links li {
+  list-style: none;
+}
+.nav-links li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.3rem;
+  letter-spacing: 2px;
+}
+.page-body {
+  height: auto;
+  display: block;
+  width: 100%;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+}
+.aboutme {
+  width: 600px;
+  text-align: center;
+}
+.aboutme h2 {
+  margin: 3rem;
+  color: #333;
+  letter-spacing: 2px;
+}
+.aboutme p span {
+  color: rgb(111, 197, 93);
+  font-weight: bold;
+  letter-spacing: 3px;
+}
+.aboutme p {
+  margin: 2rem 0rem;
+  color: #333;
+}
+.my-skills {
+  width: 600px;
+  display: flex;
+  flex-direction: column;
+}
+.my-skills h3 {
+  margin: 50px 0;
+}
+.skill-container {
+  width: 10%;
+  height: auto;
+}
+.skills-svg {
+  height: 100px;
+  width: auto;
+}
+.all-skills {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.skill-separate {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
