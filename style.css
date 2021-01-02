@@ -17,6 +17,15 @@ p {
 h3 {
   font-size: 2.5rem;
 }
+h4 {
+  font-size: 1.5rem;
+}
+header {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 .header-image {
   height: 100vh;
   width: 100%;
@@ -30,7 +39,7 @@ h3 {
 .header-text {
   position: absolute;
   color: #fff;
-  z-index: 5;
+  z-index: 4;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -57,8 +66,9 @@ nav {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: #333;
   height: 60px;
+  z-index: 5;
 }
 .nav-links {
   width: 40%;
@@ -69,6 +79,7 @@ nav {
   color: #fff;
   font-size: 1.5rem;
   letter-spacing: 2px;
+  z-index: 5;
 }
 .nav-links li {
   list-style: none;
@@ -78,6 +89,7 @@ nav {
   text-decoration: none;
   font-size: 1.3rem;
   letter-spacing: 2px;
+  z-index: 5;
 }
 .page-body {
   height: auto;
@@ -90,8 +102,9 @@ nav {
   align-items: center;
 }
 .aboutme {
-  width: 600px;
+  width: 40%;
   text-align: center;
+  height: auto;
 }
 .aboutme h2 {
   margin: 3rem;
@@ -108,16 +121,21 @@ nav {
   color: #333;
 }
 .my-skills {
-  width: 600px;
+  width: 25%;
   display: flex;
   flex-direction: column;
+  margin: 0 0 0 10vh;
 }
 .my-skills h3 {
-  margin: 50px 0;
+  margin: 50px 0 0 0;
+  text-align: center;
 }
 .skill-container {
-  width: 10%;
+  width: 30%;
   height: auto;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
 }
 .skills-svg {
   height: 100px;
@@ -130,6 +148,34 @@ nav {
 }
 .skill-separate {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   width: 100%;
+}
+.skill-separate {
+  margin: 50px 0;
+}
+.all-about-me {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.contact-me {
+  z-index: 4;
+  color: #fff;
+  text-align: center;
+  font-size: 3rem;
+  background: transparent;
+  outline: none;
+  border: 2px solid #fff;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+}
+.contact-me a {
+  color: #fff;
+  z-index: 4;
+  text-decoration: none;
+  padding: 2rem;
+  line-height: 70px;
 }
