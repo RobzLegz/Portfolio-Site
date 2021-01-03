@@ -16,6 +16,7 @@ p {
 }
 h3 {
   font-size: 2.5rem;
+  color: #333;
 }
 h4 {
   font-size: 1.5rem;
@@ -106,7 +107,7 @@ nav {
   text-align: center;
   height: auto;
 }
-.aboutme h2 {
+.aboutme h3 {
   margin: 3rem;
   color: #333;
   letter-spacing: 2px;
@@ -126,13 +127,9 @@ nav {
   flex-direction: column;
   margin: 0 0 0 10vh;
 }
-.my-skills h3 {
-  margin: 50px 0 0 0;
-  text-align: center;
-}
 .skill-container {
-  width: 30%;
-  height: auto;
+  width: 50%;
+  height: 100px;
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -140,19 +137,16 @@ nav {
 .skills-svg {
   height: 100px;
   width: auto;
+  padding: 1rem;
+}
+#skill-heading {
+  margin: 50px 0;
+  color: #333;
 }
 .all-skills {
   width: 100%;
   display: flex;
-  flex-direction: column;
-}
-.skill-separate {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-}
-.skill-separate {
-  margin: 50px 0;
+  flex-direction: row;
 }
 .all-about-me {
   width: 100%;
@@ -161,21 +155,35 @@ nav {
   align-items: center;
 }
 .contact-me {
+  width: 250px;
   z-index: 4;
   color: #fff;
   text-align: center;
   font-size: 3rem;
-  background: transparent;
+  background-color: transparent;
   outline: none;
   border: 2px solid #fff;
   position: absolute;
   left: 50%;
   transform: translate(-50%);
+  border-radius: 5px;
+  cursor: pointer;
+}
+.contact-me:hover {
+  color: #333;
 }
 .contact-me a {
   color: #fff;
-  z-index: 4;
+  z-index: 6;
   text-decoration: none;
   padding: 2rem;
   line-height: 70px;
+}
+.my-projects {
+  width: 100%;
+  height: auto;
+  text-align: center;
+}
+.my-projects h3 {
+  margin: 50px 0;
 }
