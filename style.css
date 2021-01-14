@@ -161,7 +161,7 @@ nav {
   justify-content: space-evenly;
   align-items: center;
 }
-.contact-me {
+.hire-me-btn {
   width: 250px;
   z-index: 4;
   color: #fff;
@@ -173,18 +173,14 @@ nav {
   position: absolute;
   left: 50%;
   transform: translate(-50%);
-  border-radius: 5px;
+  border-radius: 25px;
   cursor: pointer;
+  transition: all 0.3s ease;
+  padding: 20px;
 }
-.contact-me:hover {
-  color: #333;
-}
-.contact-me a {
-  color: #fff;
-  z-index: 6;
-  text-decoration: none;
-  padding: 2rem;
-  line-height: 70px;
+.hire-me-btn:hover {
+  border-radius: 0;
+  padding: 10px;
 }
 .all-projects {
   width: 100%;
