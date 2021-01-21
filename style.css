@@ -56,7 +56,6 @@ span {
 .page-start {
   width: 100%;
   height: calc(100vh + 70px);
-  background-color: #000;
   margin-top: -70px;
   padding: 40px;
   display: flex;
@@ -64,17 +63,33 @@ span {
   justify-content: center;
   align-items: center;
 }
+.header-image {
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+}
 .nav-links {
   width: 40%;
   display: flex;
   justify-content: space-around;
 }
+.not-active-link {
+  opacity: 0.7;
+  transition: opacity 0.3s ease;
+}
+.not-active-link:hover {
+  opacity: 1;
+}
 .active-link {
   border-bottom: 2px solid rgb(48, 221, 48);
   transition: all 0.3s ease;
+  opacity: 1;
 }
 .active-link:hover {
-  border-bottom: 3px solid rgb(48, 221, 48);
   opacity: 1;
 }
 .aboutme-container {
@@ -85,8 +100,7 @@ span {
   letter-spacing: 1px;
 }
 .scrolled-link {
-  opacity: 0.9;
-  border-bottom: 1px solid rgb(48, 221, 48);
+  opacity: 1;
 }
 .scroll-down-arrow {
   color: #fff;
@@ -98,14 +112,58 @@ span {
   width: 100%;
   height: 100vh;
   background-color: #000;
-  padding: 8rem 0;
+  padding: 8rem 7rem;
   display: flex;
-  align-items: center;
+  text-align: center;
   flex-direction: column;
 }
 .scrolled-nav {
   background-color: #000;
   border-bottom: 2px solid #fff;
+}
+.all-projects {
+  margin: 8rem 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.done-projects {
+  width: 100%;
+  height: 30vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.project-container {
+  width: 400px;
+  height: 300px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.image-overlay {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.7);
+}
+.image-overlay a {
+  margin: 1rem;
+  border: 1px solid #fff;
+  padding: 15px;
+  border-radius: 0 50px 0 50px;
+}
+.project-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 @keyframes animateScrollButton {
   0% {
