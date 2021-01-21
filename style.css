@@ -27,6 +27,9 @@ a {
   font-size: 1.5rem;
 }
 nav {
+  position: fixed;
+  top: 0;
+  left: 0;
   display: flex;
   height: 70px;
   justify-content: space-around;
@@ -46,7 +49,7 @@ span {
 }
 .page-start {
   width: 100%;
-  height: 100vh;
+  height: calc(100vh + 70px);
   background-color: #000;
   margin-top: -70px;
   padding: 40px;
@@ -62,10 +65,12 @@ span {
 }
 .active-link {
   border-bottom: 2px solid rgb(48, 221, 48);
-  transition: border 0.3s ease;
+  transition: all 0.3s ease;
 }
 .active-link:hover {
   border-bottom: 3px solid rgb(48, 221, 48);
+  opacity: 1;
+  font-weight: bold;
 }
 .aboutme-container {
   text-align: center;
