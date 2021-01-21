@@ -2,288 +2,102 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
 }
 body {
-  font-family: "Montserrat", sans-serif;
   overflow-y: scroll;
   overflow-x: hidden;
 }
-h2 {
-  font-size: 3rem;
+h1 {
+  font-size: 2.5rem;
+  color: #fff;
+  font-family: "Potta One", cursive;
 }
-p {
+h2 {
   font-size: 2rem;
+  color: #fff;
 }
 h3 {
-  font-size: 2.5rem;
-  color: #333;
-}
-h4 {
   font-size: 1.5rem;
+  color: #fff;
 }
 a {
-  color: #333;
   text-decoration: none;
-  padding: 30px 0;
+  color: #fff;
+  font-size: 1.5rem;
 }
-header {
+nav {
+  display: flex;
+  height: 70px;
+  justify-content: space-around;
+  width: 100%;
   align-items: center;
+  z-index: 5;
+  background-color: #000;
+}
+li {
+  list-style: none;
+}
+span {
+  color: rgb(48, 221, 48);
+}
+.logo {
+  letter-spacing: 2px;
+}
+.page-start {
+  width: 100%;
+  height: 100vh;
+  background-color: #000;
+  margin-top: -70px;
+  padding: 40px;
   display: flex;
   flex-direction: column;
   justify-content: center;
-}
-.header-image {
-  height: calc(100vh - 60px);
-  width: 100%;
-  object-fit: cover;
-  position: relative;
-  top: 0;
-  left: 0;
-  margin: 0;
-  padding: 0;
-}
-.header-text {
-  position: absolute;
-  color: #fff;
-  z-index: 4;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: auto;
-}
-.header-text h1 {
-  font-size: 3rem;
-  text-align: center;
-  letter-spacing: 4px;
-}
-.header-text h2 {
-  font-size: 2rem;
-  text-align: center;
-  margin: 4rem 0;
-  text-align: center;
-  letter-spacing: 2px;
-}
-nav {
-  width: 100%;
-  position: sticky;
-  top: 0;
-  left: 0;
-  z-index: 5;
-  display: flex;
-  justify-content: space-around;
   align-items: center;
-  background-color: #333;
-  height: 60px;
-  z-index: 5;
 }
 .nav-links {
   width: 40%;
   display: flex;
   justify-content: space-around;
 }
-.logo {
+.active-link {
+  border-bottom: 2px solid rgb(48, 221, 48);
+  transition: border 0.3s ease;
+}
+.active-link:hover {
+  border-bottom: 3px solid rgb(48, 221, 48);
+}
+.aboutme-container {
+  text-align: center;
+}
+.aboutme-container h2 {
+  margin: 20px 0;
+  letter-spacing: 1px;
+}
+.scrolled-link {
+  opacity: 0.9;
+  border-bottom: 1px solid rgb(48, 221, 48);
+}
+.scroll-down-arrow {
   color: #fff;
-  font-size: 1.5rem;
-  letter-spacing: 2px;
-  z-index: 5;
-}
-.nav-links li {
-  list-style: none;
-}
-.nav-links li a {
-  color: #fff;
-  text-decoration: none;
-  font-size: 1.3rem;
-  letter-spacing: 2px;
-  z-index: 5;
-  transition: all 0.3s ease;
-  border: none;
-  padding: 0;
-  opacity: 0.8;
-}
-.nav-links li a:hover {
-  font-weight: bolder;
-  opacity: 1;
-}
-.page-body {
-  height: auto;
-  display: block;
-  width: 100%;
-  background-color: #fff;
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  align-items: center;
-}
-.aboutme {
-  width: 40%;
-  text-align: center;
-  height: auto;
-}
-.aboutme h3 {
-  margin: 3rem;
-  color: #333;
-  letter-spacing: 2px;
-}
-.aboutme p span {
-  color: rgb(111, 197, 93);
-  font-weight: bold;
-  letter-spacing: 3px;
-}
-.aboutme p {
-  margin: 2rem 0rem;
-  color: #333;
-}
-.my-skills {
-  width: 25%;
-  display: flex;
-  flex-direction: column;
-  margin: 0 0 0 10vh;
-}
-.skill-container {
-  width: 50%;
-  height: 100px;
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-}
-.skills-svg {
-  height: 100px;
-  width: auto;
-  padding: 1rem;
-}
-#skill-heading {
-  margin: 50px 0;
-  color: #333;
-}
-.all-skills {
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  align-items: baseline;
-  justify-content: baseline;
-}
-.all-about-me {
-  width: 100%;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-}
-.hire-me-btn {
-  width: 250px;
-  z-index: 4;
-  color: #fff;
-  text-align: center;
-  font-size: 3rem;
-  background-color: transparent;
-  outline: none;
-  border: 2px solid #fff;
+  transform: scale(3);
   position: absolute;
-  left: 50%;
-  transform: translate(-50%);
-  border-radius: 25px;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  padding: 20px;
+  animation: animateScrollButton 2s ease-in infinite;
 }
-.hire-me-btn:hover {
-  border-radius: 0;
-  padding: 10px;
-}
-.all-projects {
-  width: 100%;
-  height: auto;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-}
-.my-projects {
-  width: 100%;
-}
-.my-projects h3 {
-  margin: 50px 0;
-}
-.website-img {
-  width: 100%;
-  height: auto;
-  z-index: 3;
-  pointer-events: all;
-  display: block;
-  border-radius: 30px;
-  position: relative;
-}
-.project-img {
-  position: relative;
-  width: 30%;
-  height: 100%;
-  margin: 0;
-  padding: 0;
-}
-.img-owerlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  text-align: center;
-  width: 100%;
-  height: 100%;
-  justify-content: center;
-  align-items: center;
-  z-index: 5;
-  background: rgba(0, 0, 0, 0.7);
-  margin: auto;
-  padding: auto;
-  opacity: 0;
-  transition: all 0.3s ease;
-  display: flex;
-  flex-direction: column;
-  border-radius: 30px;
-}
-.img-owerlay:hover {
-  opacity: 1;
-}
-.img-owerlay a {
-  color: #e4dede;
-}
-.img-owerlay h4 {
-  margin: 2rem;
-  font-size: 2rem;
-  border: 1px solid #e4e4e4;
-  border-radius: 0 30px;
-  padding: 10px;
-  transition: all 0.3s ease;
-}
-.img-owerlay h4:hover {
-  border-radius: 30px 0;
-}
-.weather-header {
-  width: 100%;
-  height: 50vh;
-  max-height: 100vh;
-  min-height: 100vh;
-  position: relative;
-}
-.weather-app-header-img {
-  width: 100%;
-  height: 40vh;
-  object-fit: cover;
-  background: rgba(0, 0, 0, 0.7);
-  max-height: 40vh;
-}
-.header-owerlay {
-  width: 100%;
-  height: 40vh;
-  position: absolute;
-  top: 0;
-  left: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: rgba(0, 0, 0, 0.7);
-  flex-direction: column;
-}
-.header-owerlay h2 {
-  color: #e4dede;
-  margin-top: 10vh;
-  padding: 30px 0;
+@keyframes animateScrollButton {
+  0% {
+    bottom: 6%;
+  }
+  25% {
+    bottom: 2.5%;
+  }
+  50% {
+    bottom: 5%;
+  }
+  75% {
+    bottom: 3%;
+  }
+  100% {
+    bottom: 6%;
+  }
 }
