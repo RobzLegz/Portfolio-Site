@@ -48,6 +48,11 @@ span {
 .logo {
   letter-spacing: 2px;
 }
+.page-body {
+  scroll-snap-type: mandatory;
+  scroll-snap-type: y mandatory;
+  height: 100vh;
+}
 .page-start {
   width: 100%;
   height: calc(100vh + 70px);
