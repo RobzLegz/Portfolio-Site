@@ -280,6 +280,9 @@ span {
   background: rgb(233, 233, 48);
   color: #000;
 }
+.course-heading {
+  margin: 100px 0;
+}
 @media (max-width: 1050px) {
   .nav-links {
     width: 60%;
