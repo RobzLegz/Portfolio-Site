@@ -307,5 +307,5 @@ span {
 }
 ::-webkit-scrollbar-thumb {
   background: linear-gradient(45deg, rgb(48, 221, 48), #79ff6c);
-  border-radius: 3px;
+  border-radius: 10px;
 }
