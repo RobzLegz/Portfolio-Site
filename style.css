@@ -26,6 +26,9 @@ a {
   color: #fff;
   font-size: 1.5rem;
 }
+p {
+  color: #fff;
+}
 nav {
   position: fixed;
   top: 0;
@@ -252,6 +255,12 @@ span {
   text-shadow: 3px 3px #000;
   font-size: 2.5rem;
   letter-spacing: 1px;
+}
+.project-tags {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%;
 }
 @keyframes animateScrollButton {
   0% {
