@@ -291,13 +291,18 @@ span {
 }
 @media (max-width: 1115px) {
   .project-container {
-    margin: 0 30px;
-    width: 300px;
+    margin: 30px;
+    width: 350px;
     height: 300px;
     justify-content: space-around;
+    z-index: 4;
   }
-  .page-project-section {
-    height: auto;
+  .hcurrent-projects {
+    display: none;
+  }
+  .myprojects-text {
+    margin-top: -77px;
+    margin-bottom: 50px;
   }
   .page-footer {
     position: relative;
@@ -309,18 +314,74 @@ span {
   }
   .done-projects {
     flex-direction: column;
+    margin: 150px 0;
+  }
+  .secondcontainerproject {
+    margin-top: 90px;
   }
 }
 @media (max-width: 800px) {
+  .project-container {
+    margin: 20px 0;
+    width: 300px;
+    height: 300px;
+    z-index: 4;
+  }
+  .secondcontainerproject {
+    margin-top: 20px;
+  }
+  .all-projects {
+    margin-top: -10px;
+  }
+
+  p {
+    font-size: 0.5rem;
+  }
+  h1 {
+    font-size: 1.5rem;
+  }
+  h2 {
+    font-size: 1.3rem;
+  }
+  h3 {
+    font-size: 1rem;
+  }
+  .email-text {
+    transform: scale(0.7);
+    margin: 0;
+  }
+  .contact-text {
+    transform: scale(0.7);
+  }
   .social-image {
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
+  }
+  .all-skill-container {
+    display: none;
   }
   .socials-container {
-    width: 400px;
+    width: 300px;
   }
-  #current-projects {
-    position: absolute;
+}
+@media (max-width: 450px) {
+  a {
+    font-size: 1rem;
+  }
+  .all-projects {
+    margin-top: -60px;
+  }
+  .project-container {
+    margin: 10px 0;
+    width: 300px;
+    height: 200px;
+    z-index: 4;
+  }
+  .project-tags {
+    display: none;
+  }
+  .secondcontainerproject {
+    margin-top: -20px;
   }
 }
 @keyframes animateScrollButton {
