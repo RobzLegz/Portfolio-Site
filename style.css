@@ -293,7 +293,7 @@ span {
   justify-content: center;
 }
 .all-course-container {
-  width: 80%;
+  width: 100%;
   margin: 0 auto;
   display: flex;
   flex-direction: row;
@@ -329,6 +329,20 @@ span {
 }
 .course-overlay:hover {
   opacity: 1;
+}
+@media (max-width: 1500px) {
+  .course-container {
+    width: 400px;
+    height: 250px;
+  }
+}
+@media (max-width: 1070px) {
+  .all-course-container {
+    flex-direction: column;
+  }
+  .course-container {
+    margin: 30px 0;
+  }
 }
 @media (max-width: 1050px) {
   .nav-links {
@@ -418,6 +432,9 @@ span {
   a {
     font-size: 1rem;
   }
+  .course-heading {
+    margin-top: 10px;
+  }
   .all-projects {
     margin-top: -60px;
   }
@@ -427,11 +444,18 @@ span {
     height: 200px;
     z-index: 4;
   }
+  .all-course-container {
+    margin-top: -20px;
+  }
   .project-tags {
     display: none;
   }
   .secondcontainerproject {
     margin-top: -20px;
+  }
+  .course-container {
+    width: 300px;
+    height: 200px;
   }
 }
 @keyframes animateScrollButton {
