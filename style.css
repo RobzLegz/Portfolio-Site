@@ -266,18 +266,16 @@ span {
 .project-tag {
   border-radius: 20px;
   padding: 5px;
+  color: #fff;
 }
 .react-tag {
   background: rgb(94, 183, 212);
-  color: #fff;
 }
 .html-tag {
   background: rgb(240, 137, 19);
-  color: #fff;
 }
 .css-tag {
   background: rgb(61, 61, 184);
-  color: #fff;
 }
 .javascript-tag {
   background: rgb(233, 233, 48);
@@ -299,4 +297,15 @@ span {
   100% {
     bottom: 6%;
   }
+}
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  border: 3px solid #232943;
+  box-shadow: inset 0 0 2.5px 2px rgba(0, 0, 0, 0.8);
+}
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(45deg, rgb(48, 221, 48), #79ff6c);
+  border-radius: 3px;
 }
