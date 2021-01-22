@@ -7,6 +7,7 @@
 body {
   overflow-y: scroll;
   overflow-x: hidden;
+  width: 100vw;
 }
 h1 {
   font-size: 2rem;
@@ -231,7 +232,7 @@ span {
 }
 .footer-image {
   width: 110%;
-  height: 100%;
+  height: 120%;
   object-fit: cover;
   position: absolute;
   left: -10%;
@@ -261,6 +262,26 @@ span {
   flex-direction: row;
   justify-content: space-around;
   width: 100%;
+}
+.project-tag {
+  border-radius: 20px;
+  padding: 5px;
+}
+.react-tag {
+  background: rgb(94, 183, 212);
+  color: #fff;
+}
+.html-tag {
+  background: rgb(240, 137, 19);
+  color: #fff;
+}
+.css-tag {
+  background: rgb(61, 61, 184);
+  color: #fff;
+}
+.javascript-tag {
+  background: rgb(233, 233, 48);
+  color: #000;
 }
 @keyframes animateScrollButton {
   0% {
