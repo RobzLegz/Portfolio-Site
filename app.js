@@ -36,3 +36,6 @@ const hireButton = document.querySelector(".hire-button");
 hireButton.addEventListener("click", function(){
     scrollDown(".page-footer", 1000);
 })
+window.onload = function(){
+    scrollDown(".page-start", 1000);
+}

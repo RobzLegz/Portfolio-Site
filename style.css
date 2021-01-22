@@ -201,21 +201,17 @@ span {
   border-radius: 20px;
 }
 .all-skill-container {
-  width: 100%;
-  height: 90vh;
+  width: 80%;
+  height: 100px;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
   position: absolute;
-  top: 45%;
+  top: 60%;
   left: 50%;
-  transform: translate(-45%, 0);
+  transform: translate(-50%, 80%);
   z-index: -1;
-}
-.skill-container {
-  width: 300px;
-  height: 300px;
 }
 .skill-image {
   width: 100px;
@@ -223,43 +219,42 @@ span {
 }
 .page-footer {
   width: 100vw;
-  height: 50vh;
+  height: 100vh;
   position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  bottom: 0;
+  left: 0;
 }
 .footer-image {
-  width: 110%;
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
   object-fit: cover;
   position: absolute;
-  left: -10%;
-  transform: scaleY(-1);
   z-index: 2;
-  bottom: 0;
-  overflow: hidden;
+  left: 0;
 }
 .socials-container {
-  width: 700px;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
   height: 100px;
   z-index: 3;
+  width: 800px;
 }
 .social-image {
   width: 100px;
   height: 100px;
 }
 .page-footer h2 {
-  margin: 30px;
+  margin: 100px;
   text-shadow: 3px 3px #000;
   font-size: 2.5rem;
   letter-spacing: 1px;
+  z-index: 3;
+  text-align: center;
 }
 .project-tags {
   display: flex;
@@ -297,18 +292,35 @@ span {
 @media (max-width: 1115px) {
   .project-container {
     margin: 0 30px;
+    width: 300px;
+    height: 300px;
+    justify-content: space-around;
   }
   .page-project-section {
-    height: 100vh;
+    height: auto;
   }
   .page-footer {
     position: relative;
-    width: 100vw;
+    width: 100%;
     left: 0;
   }
   .footer-image {
-    width: 100vw;
-    left: -12%;
+    width: 100%;
+  }
+  .done-projects {
+    flex-direction: column;
+  }
+}
+@media (max-width: 800px) {
+  .social-image {
+    width: 50px;
+    height: 50px;
+  }
+  .socials-container {
+    width: 400px;
+  }
+  #current-projects {
+    position: absolute;
   }
 }
 @keyframes animateScrollButton {
