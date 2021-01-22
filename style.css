@@ -283,6 +283,53 @@ span {
 .course-heading {
   margin: 100px 0;
 }
+.course-container {
+  width: 600px;
+  height: 400px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.all-course-container {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  height: 50vh;
+}
+.course-image {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+}
+.course-overlay {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  background: rgba(46, 43, 231, 0.7);
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  border-radius: 20px;
+}
+.csharp-overlay {
+  background: rgba(255, 255, 255, 0.7);
+}
+.csharp-overlay-text {
+  color: #000;
+}
+.course-overlay:hover {
+  opacity: 1;
+}
 @media (max-width: 1050px) {
   .nav-links {
     width: 60%;
